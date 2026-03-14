@@ -2,19 +2,24 @@ import WaitlistForm from "@/components/waitlist-form"
 import FeatureCard from "@/components/feature-card"
 import ReviewCard from "@/components/review-card"
 import { Badge } from "@/components/ui/badge"
-
+import logo from "@/public/logo2.png"
+import {Loading, Congrats} from "@/components/Loading"
+import rope from "@/public/rope.png"
+import Image from "next/image"
 export default function Page() {
   return (
     <main className="min-h-screen bg-black text-white relative overflow-hidden">
-
+      
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#84ff0015,transparent_60%)]"/>
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(132,255,0,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(132,255,0,0.05)_1px,transparent_1px)] bg-[size:40px_40px]" />
+ <Image src={rope} width={100} h={0} unoptimized alt="logo" className="mx-auto my-0 py-0 yzero " />
+      <Image src={logo} width={100} h={0} unoptimized alt="logo" className="mx-auto my-0 py-0 yzero -translate-y-3" />
 
       <section className="max-w-6xl mx-auto px-6 pt-28 pb-20 text-center relative z-10">
-
+       
         <Badge className="bg-lime-500 text-black mb-6">
-          AI Sales Intelligence
+           Hook Your Leads!
         </Badge>
 
         <h1 className="text-6xl font-bold leading-tight">
@@ -24,7 +29,7 @@ export default function Page() {
 
         <p className="mt-6 text-gray-400 max-w-2xl mx-auto text-lg">
           Slimehook analyzes behavior, enriches data, and predicts which leads
-          actually close — then tells your sales team exactly who to contact.
+          actually close - then tells your sales team exactly who to contact.
         </p>
 
         <div className="mt-10 flex justify-center">
@@ -67,20 +72,20 @@ export default function Page() {
 
           <ReviewCard
             name="Daniel Ross"
-            role="Head of Sales @ SaaSify"
-            review="Slimehook shows us which leads will actually close. It's like having an AI sales analyst."
+            role="CEO: Stamina-Labs"
+            review="This might be what businesses need; doesn't require our sales team to be developers and still does the job. "
           />
 
           <ReviewCard
             name="Maya Chen"
-            role="Growth Lead @ Nimbus"
+            role="Sales Employee"
             review="Our reps stopped wasting time chasing bad leads. Conversion rates jumped immediately."
           />
 
           <ReviewCard
-            name="Alex Rivera"
-            role="Founder @ LaunchLabs"
-            review="The intent tracking alone is insane. You instantly know who is ready to buy."
+            name="Robert D. Walshmith"
+            role="Marketing Manager: Vector"
+            review="Medium-small sized businesses are sick of over-complex dashboards insights and struggle to find affordable CRM Tool."
           />
 
         </div>
@@ -96,7 +101,7 @@ export default function Page() {
         <p className="text-gray-400 mb-10">
           Early users get lifetime founder pricing.
         </p>
-
+        
         <div className="flex justify-center">
           <WaitlistForm />
         </div>
