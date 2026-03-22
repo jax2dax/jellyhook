@@ -30,7 +30,7 @@ export default function RootLayout({
         {children}
         {/**jelly hook tracker */}
         <script src="http://localhost:3000/tracker.js" data-key="6b18ad00-fc59-4841-bfbe-8fff33c7a998"></script>
-      <script src="http://localhost:3000/tracker.js" data-key="d9bc5f3a-a68c-4ae7-a079-a8d5ca839a4b"></script>
+         <script src="http://localhost:3000/tracker.js" data-key="d9bc5f3a-a68c-4ae7-a079-a8d5ca839a4b"></script>
       </body>
     </html>
   );

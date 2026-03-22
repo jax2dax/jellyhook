@@ -28,7 +28,7 @@ export default function Page() {
         </h1>
 
         <p className="mt-6 text-gray-400 max-w-2xl mx-auto text-lg">
-          JellyHook analyzes behavior, enriches data, and predicts which leads
+          Jelly Hook analyzes behavior, enriches data, and predicts which leads
           actually close - then tells your sales team exactly who to contact.
         </p>
 
