@@ -19,7 +19,7 @@ export default function Page() {
       <section className="max-w-6xl mx-auto px-6 pt-28 pb-20 text-center relative z-10">
        
         <Badge className="bg-lime-500 text-black mb-6">
-           Hook Your Leads!
+           Hook Your Leads!!
         </Badge>
 
         <h1 className="text-6xl font-bold leading-tight">

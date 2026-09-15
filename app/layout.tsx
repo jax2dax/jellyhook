@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,8 +29,9 @@ export default function RootLayout({
       >
         {children}
         {/**jelly hook tracker */}
-        <script src="http://localhost:3000/tracker.js" data-key="6b18ad00-fc59-4841-bfbe-8fff33c7a998"></script>
-         <script src="http://localhost:3000/tracker.js" data-key="d9bc5f3a-a68c-4ae7-a079-a8d5ca839a4b"></script>
+        {/* <script src="http://localhost:3000/tracker.js" data-key="6b18ad00-fc59-4841-bfbe-8fff33c7a998"></script>
+         <script src="http://localhost:3000/tracker.js" data-key="d9bc5f3a-a68c-4ae7-a079-a8d5ca839a4b"></script> */}
+         <script src="https://jellyhookapp.vercel.app/tracker.js" data-key="e81a1f6b-bdfc-49b8-bbbc-1ab70549855a"></script>
       </body>
     </html>
   );
